@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81db9f34c5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+</head>
+<!-- This HTML is basic that is why I didn't provide comments explain setting things -->
+
+<body>
+    <section>
+        <section class="main-container">
+            <div class="form-container">
+                <form data-form-submit>
+                    <h1>Create an account</h1>
+                    <div class="inner-div">
+                        <label for="first_name">First Name:</label>
+                        <input data-first-name type="text" placeholder="Mustapha" aria-label="Enter your first name" autocomplte="off">
+                        <p class="first_name_error error"></p>
+                    </div>
+
+                    <div class="inner-div">
+                        <label for="last-name">First Name:</label>
+                        <input data-last-name id="last-name" type="text" placeholder="Seidu" aria-label="Enter your last name" autocomplte="off">
+                        <p class="last_name_error error"></p>
+                    </div>
+
+                    <div class="inner-div">
+                        <label for="male">Male </label>
+                        <input data-male-check id="male" type="radio" aria-label="Select your gender" name="gender">
+                    </div>
+
+                    <div class="inner-div">
+                        <label for="female">Female </label>
+                        <input data-female-check id="female" type="radio" aria-label="Select your gender" name="gender">
+                    </div>
+
+                    <div class="inner-div password-field">
+                        <p class="password_strength_p strong"></p>
+                        <label for="password1">Enter password 🔑:</label>&nbsp;
+                        <input data-password id="password1" type="password" placeholder="password" aria-label="Enter your password">
+                        <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                        <div class="password-strength"></div>
+                    </div>
+
+                    <div class="inner-div comfirm-password-field">
+                        <label for="password">Confirm password 🔒:</label>
+                        <input data-comfirm-password id="password" type="password" placeholder="password" aria-label="Enter your password">
+                        <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                        <p class="not-match error"></p>
+                    </div>
+
+                    <div class="button-container">
+                        <button data-submit-button type="submit">Create</button>
+                    </div>
+
+                </form>
+                <div class="choose-div">
+                    <p>Already have an account <a href="">Login</a></p>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,589 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scrollbar-width: none;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+
+/* html {
+    overflow: hidden;
+} */
+
+:root {
+    --color: #333;
+}
+
+
+/**
+* ! THE BELOW CODE IS THE STYLE FOR THE HEADER SECITON.
+**/
+
+header {
+    min-width: 100vw;
+    height: fit-content;
+    padding-bottom: 20px;
+    background-color: #023047;
+    color: whitesmoke;
+}
+
+.header-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.header-container a img {
+    width: 120px;
+}
+
+.header-container ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.header-container ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-container ul li a:last-child i {
+    padding-right: 5px;
+}
+
+.header-container ul li a i {
+    font-size: 20px;
+    color: white;
+}
+
+.commenting-o,
+.cart-o {
+    position: relative;
+}
+
+.comments_counter {
+    position: absolute;
+    top: -17px;
+    right: -15px;
+    background-color: red;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.cart_counter {
+    position: absolute;
+    top: -17px;
+    right: -15px;
+    background-color: green;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.input_search_filter_section {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_search_filter_section article {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.input_search_filter_section article aside:nth-child(1) h2 {
+    display: inline-block;
+    margin: 0 30px;
+    position: relative;
+}
+
+.input_search_filter_section article aside:nth-child(1) h2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.input_search_filter_section article aside:nth-child(1) h2.active::before {
+    content: '';
+    width: 50%;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    border-top-right-radius: 5px;
+}
+
+.input_search_filter_section article aside:nth-child(2) {
+    width: 100vw;
+    margin-top: 40px;
+}
+
+.input_search_filter_section article aside:nth-child(2) div {
+    width: 70%;
+    margin: auto;
+    height: 60px;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+}
+
+.input_search_filter_section article aside:nth-child(2) div input {
+    flex-grow: 1;
+    width: 100%;
+    border-radius: 3rem;
+    padding: 2px 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+}
+
+.input_search_filter_section article aside:nth-child(2) div i {
+    height: 90%;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: orange;
+    margin: 5px;
+    border-radius: 3rem;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.input_search_filter_section article aside:nth-child(3) {
+    margin-top: 50px;
+}
+
+.input_search_filter_section article aside:nth-child(3) label,
+.input_search_filter_section article aside:nth-child(3) aside {
+    display: inline;
+}
+
+.input_search_filter_section article aside:nth-child(3) aside button {
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 3rem;
+    border: 2px solid white;
+    background-color: inherit;
+    color: white;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.5s ease;
+}
+
+.input_search_filter_section article aside:nth-child(3) aside button:hover {
+    background-color: white;
+    color: #333;
+}
+
+.welcome_alibaba_ecommerce {
+    background-color: #ffe5ec;
+    width: 100%;
+    height: 15vh;
+}
+
+.welcome_alibaba_ecommerce .welcome_alibaba_ecommerce_innerContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+.welcome_alibaba_ecommerce ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome_alibaba_ecommerce ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    list-style: none;
+}
+
+.welcome_alibaba_ecommerce ul li:nth-child(2) {
+    border-left: 2px solid black;
+    padding-left: 10px;
+}
+
+.welcome_alibaba_ecommerce ul li:nth-child(3) {
+    border-left: 2px solid black;
+    padding-left: 10px;
+}
+
+.fa-quote-left,
+.fa-diamond,
+.fa-compass {
+    font-size: 1.5rem;
+    padding-right: 7px;
+    text-align: center;
+}
+
+.welcome_alibaba_ecommerce ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #023047;
+}
+
+.welcome_alibaba_ecommerce_innerContainer .fa-list-ul {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    font-size: 30px;
+}
+
+
+/**
+    * ! THE BELOW CODE IS THE STYLE FOR THE TOP RANKING SECITON.
+**/
+
+.top-ranking-section {
+    width: 100%;
+}
+
+.top-ranking-section-inner {
+    width: 90%;
+    margin: auto;
+}
+
+.top-ranking-section-inner ul li {
+    text-align: center;
+}
+
+.top-ranking-section h2 {
+    padding: 40px;
+    font-size: 3vw;
+}
+
+.top-ranking-section ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.top-ranking-section ul li {
+    border: 2px solid #edf2f4;
+    padding: 10px;
+    border-radius: 3rem;
+    cursor: pointer;
+    list-style: none;
+}
+
+.top-ranking-section ul li.active {
+    border-color: black;
+    background-color: #f8edeb;
+}
+
+.top-ranking-section ul li.active:active {
+    border-color: black;
+    background-color: #f8edeb;
+}
+
+.top-ranking-section ul li a {
+    text-decoration: none;
+    color: #005;
+}
+
+.most-popular-products-outer-container {
+    display: grid;
+    place-content: center;
+    width: 100%;
+}
+
+.most-popular-products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    gap: 20px;
+}
+
+.most-popular-products-container-column-container {
+    background-color: #ede0d4;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+    margin: 30px 0;
+    border-radius: 7px;
+}
+
+.most-popular-products-container-inner-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    width: 320px;
+    margin: auto;
+    gap: 5px;
+}
+
+
+/**
+* ! This section is for second section
+**/
+
+.overall-section-main-container___ {
+    background-color: #ffe5ec;
+    padding: 50px;
+}
+
+.overall-section-main-container_ {
+    width: 96%;
+    margin: auto;
+    padding: 30px;
+}
+
+.main-conatainer-products_from_the_second_section_which_can_be_added_add_directly {
+    display: grid;
+    grid-template-columns: repeat(5, 250px);
+    place-content: center;
+    gap: 10px;
+}
+
+.products_from_the_second_section_which_can_be_added_add_directly {
+    width: 205px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.products_from_the_second_section_which_can_be_added_add_directly img {
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.8s ease;
+    filter: grayscale(1);
+}
+
+.products_from_the_second_section_which_can_be_added_add_directly img:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+
+.products_from_the_second_ {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 10px;
+}
+
+
+/**
+* ! The footer section 
+**/
+
+footer {
+    padding-top: 50px;
+}
+
+.outer_footer_inner_section__ {
+    width: 90%;
+    margin: auto;
+}
+
+.footer-first-div-view-more {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.footer-first-div-view-more a {
+    border: 2px solid black;
+    border-radius: 4rem;
+    padding: 1.2rem 1.7rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #005;
+    transition: all 0.9s ease;
+}
+
+.footer-first-div-view-more a:hover {
+    background-color: #edf2f4;
+    transform: scale(0.7);
+}
+
+.footer-main-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    place-content: center;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.footer-main-container div p a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 1s ease;
+    line-height: 30px;
+}
+
+.footer-main-container div p a:hover {
+    border-bottom: 2px solid #003;
+}
+
+.footer-last-container {
+    background-color: #edf2f4;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    color: grey;
+}
+
+@media (max-width: 770px) {
+    /**
+    * ! THE BELOW CODE IS THE STYLE FOR THE HEADER SECITON.
+    **/
+    .header-container {
+        width: 98%;
+        justify-content: space-between;
+        font-size: 1.05rem;
+    }
+    .header-container a img {
+        width: 80px;
+    }
+    .header-container ul li a .fa {
+        font-size: 0.65rem;
+    }
+    .header-container ul li span {
+        padding: 3px;
+        font-size: 0.5rem;
+    }
+    .comments_counter,
+    .cart_counter {
+        top: -7px;
+        right: -11px;
+    }
+    .input_search_filter_section article aside:nth-child(2) div {
+        width: 90%;
+        height: 40px;
+    }
+    .input_search_filter_section article aside:nth-child(2) div i {
+        font-size: 14px;
+        cursor: pointer;
+        width: 25%;
+    }
+    .input_search_filter_section article aside:nth-child(3) aside button {
+        padding: 2px 6px;
+        font-size: 14px;
+        margin: 5px;
+    }
+    #nav {
+        display: none;
+    }
+    .welcome_alibaba_ecommerce ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #009598;
+        border-radius: 10px;
+        padding: 10px;
+        line-height: 20px;
+        width: 50vw;
+    }
+    .welcome_alibaba_ecommerce ul li a {
+        font-size: 0.8rem;
+        word-break: keep-all;
+        color: white;
+    }
+    .welcome_alibaba_ecommerce ul li:nth-child(2) {
+        border-left: 0;
+        padding-left: 0;
+    }
+    .welcome_alibaba_ecommerce ul li:nth-child(3) {
+        border-left: 0;
+        padding-left: 0;
+    }
+    .fa-quote-left,
+    .fa-diamond,
+    .fa-compass {
+        font-size: 0.6rem;
+        text-align: center;
+    }
+    .welcome_alibaba_ecommerce_innerContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .welcome_alibaba_ecommerce_innerContainer h2 {
+        font-size: 1rem;
+    }
+    .welcome_alibaba_ecommerce_innerContainer .fa-list-ul {
+        position: absolute;
+        top: 39px;
+        right: 30px;
+        display: block;
+        cursor: pointer;
+        font-size: 25px;
+        transition: all 1s ease;
+    }
+    /**
+    * ! THE BELOW CODE IS THE STYLE FOR THE TOP RANKING SECITON.
+    **/
+    .top-ranking-section ul li {
+        font-size: 13px;
+        padding: 5px;
+    }
+    .most-popular-products-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
+    /**
+* ! The footer section 
+**/
+    .footer-first-div-view-more a {
+        border-radius: 3rem;
+        padding: 1.2rem;
+        font-size: 0.8rem;
+    }
+    .footer-main-container {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+    }
+    /**
+* ! This section is for second section
+**/
+    .main-conatainer-products_from_the_second_section_which_can_be_added_add_directly {
+        grid-template-columns: repeat(3, 110px);
+        gap: 5px;
+    }
+    .products_from_the_second_section_which_can_be_added_add_directly {
+        width: 110px;
+        font-size: small;
+    }
+    .products_from_the_second_section_which_can_be_added_add_directly img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 771px) and (max-width: 920px) {
+    .most-popular-products-container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 0px;
+    }
+    /**
+* ! The footer section 
+**/
+    .footer-main-container {
+        grid-template-columns: repeat(3, minmax(150px, 1fr));
+    }
+}
